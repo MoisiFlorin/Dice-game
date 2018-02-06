@@ -40,7 +40,7 @@ body {
 }
 
 
-.box-player-1, .box-player-2 {
+.player-0-panel, .player-1-panel {
     align-self: center;
     margin: 0 auto;
     width: 50%;
@@ -69,7 +69,7 @@ body {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.player-1, .player-2 {
+.player-name {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ body {
     position: relative;
 }
 
-.player-1-score, .player-2-score {
+.player-score {
     text-align: center;
     font-size: 80px;
     font-weight: 100;
@@ -89,9 +89,9 @@ body {
 }
 
 .active {background-color: #f7f7f7;}
-.active .player-1 {font-weight: 300; }
+.active .player-name {font-weight: 300; }
 
-.active .player-1::after {
+.active .player-name::after {
     content: "\2022";
     font-size: 47px;
     position: absolute;
@@ -100,7 +100,7 @@ body {
     right: 10px;
 }
 
-.player-1-current-container, .player-2-current-container {
+.player-current-box {
     background-color: #EB4D4D;
     color: #FFF;
     width: 40%;
@@ -109,16 +109,41 @@ body {
     text-align: center;
 }
 
-.player-1-current, .player-2-current {
+.player-current-label {
     color: #222;
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 12px;
 }
 
-.player-1-current-score, .player-2-current-score {
+.player-current-score {
     font-size: 30px;
 }
+
+
+
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-new { top: 45px;}
+.btn-roll { top: 403px;}
+.btn-hold { top: 467px;}
 
 button {
     /*
@@ -150,28 +175,6 @@ button {
     font-weight: 300;
     transition: background-color 0.3s, color 0.3s;
 }
-
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
-
-button:focus {
-    outline: none;
-}
-
-i {
-    color: #EB4D4D;
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 32px;
-    line-height: 1;
-    vertical-align: text-top;
-    margin-top: -4px;
-    transition: margin 0.3s;
-}
-
-.new-game { top: 45px;}
-.roll-dice { top: 403px;}
-.hold { top: 467px;}
 
 .winner { background-color: #f7f7f7; }
 .winner .player-1 { font-weight: 300; color: #EB4D4D; }
