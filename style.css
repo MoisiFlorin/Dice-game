@@ -30,7 +30,7 @@ body {
     position: fixed;
     top: 0;
     margin: 10px;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .container {
@@ -41,8 +41,8 @@ body {
     align-content: center;
     position: relative;
     background-color: #fff;
-    height: 600px;
-    width: 1000px;
+    height: 80%;
+    width: 80%;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
 }
 
@@ -51,7 +51,7 @@ body {
     align-self: center;
     margin: 0 auto;
     width: 50%;
-    height: 600px;
+    height: 90%;
     padding: 10vh;
 }
 
@@ -93,11 +93,11 @@ body {
 
 .active .player-name::after {
     content: "\2022";
-    font-size: 47px;
+    font-size: 45px;
     position: absolute;
     color: #eb4d4d;
-    top: -7px;
-    right: 10px;
+    top: -5px;
+    
 }
 
 .player-current-box {
@@ -148,15 +148,18 @@ i {
 }
 
 .btn-roll {
+    position: absolute;
     top: 50vh;
 }
 
 .btn-hold {
-    top: 60vh;
+     position: absolute;
+    top: 55vh;
 }
 
 #btn-rules {
-    top: 70vh;
+     position: absolute;
+    top: 60vh;
 }
 
 button {
@@ -187,7 +190,7 @@ button {
 #rules {
     display: none;
     position: absolute;
-    right: 145vh;
+    top: 90vh;
     font-family: lato, sans-serif;
     font-size: 17px;
     font-weight: 800;
